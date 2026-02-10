@@ -1,6 +1,8 @@
-//for loops
-for(let i= 1; i<=5; i++){
-    console.log("javascript is versatile language ")
-} 
+//game of guess
+let gameNum = 7;
+let userNum = prompt("guess the number :");
 
-
+while(userNum != gameNum ){
+    userNum = prompt("wrong! Guess again:");
+}
+ console.log("congo, you are RIGHTTT");
