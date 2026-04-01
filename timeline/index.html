@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Array Memory Timeline</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      background: #0f172a;
+      color: white;
+    }
+
+    h1 {
+      margin-top: 20px;
+    }
+
+    .array-display {
+      font-size: 28px;
+      margin: 20px;
+      padding: 10px;
+      background: #1e293b;
+      border-radius: 10px;
+    }
+
+    button {
+      margin: 5px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #3b82f6;
+      color: white;
+    }
+
+    button:hover {
+      background: #2563eb;
+    }
+
+    .timeline {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .step {
+      background: #1e293b;
+      padding: 10px;
+      margin: 8px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .step:hover {
+      background: #334155;
+    }
+
+    .active {
+      border: 2px solid #22c55e;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>⏳ Array Memory Timeline</h1>
+
+  <div class="array-display" id="currentArray"></div>
+
+  <div>
+    <button onclick="addItem()">➕ Add</button>
+    <button onclick="removeItem()">➖ Remove</button>
+    <button onclick="doubleValues()">✖️ Double</button>
+    <button onclick="filterEven()">🔍 Filter Even</button>
+  </div>
+
+  <div class="timeline" id="timeline"></div>
+     <script src="script.js"></script> 
+  </body>
+</html>
