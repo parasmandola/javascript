@@ -1,0 +1,19 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 100px;
+    margin-top: 10px;
+}
